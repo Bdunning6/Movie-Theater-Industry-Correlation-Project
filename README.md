@@ -1,3 +1,4 @@
+## Table of contents
 # Movie Theater Industry Analysis and Correlation Project
 
 
@@ -8,7 +9,7 @@ Movie theaters have been a vital part of the motion picture industry for a long 
 ## Objectives
 
 ## Dataset ([Link to dataset](https://www.kaggle.com/datasets/danielgrijalvas/movies))
-The data set was found on Kaggle. There are 7668 rows and 15 columns. The 15 columns are:
+The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 columns. The 15 columns are:
 * **Name:** The name of the film.
 * **Rating:** The rating of the film.
 * **Genre:** The genre of the film.
@@ -25,4 +26,14 @@ The data set was found on Kaggle. There are 7668 rows and 15 columns. The 15 col
 * **Company:** The company that produced the film.
 * **Runetime:** Runtime of the film.
 
+## Importing the Libaries and Dataset Into Python
+Let's begin by importing the pandas, seaborn, numpy and matplotlib libaries. 
+![Import Libaries Image](https://user-images.githubusercontent.com/115194266/211173986-a20effb5-10a5-4a46-bd06-3a8c95e85f7c.JPG)
+
+Importing the data set.
+![Pandas Data Import](https://user-images.githubusercontent.com/115194266/211174190-bd309ce2-8f29-4127-942d-1bc6fbd5573e.JPG)
+
+# Overview of Data
+In order to begin, we should seek to develop a basic understanding of the data that we are working with. Let's use the df method to get a general overview of the dataframe. 
+![DF](https://user-images.githubusercontent.com/115194266/211174285-5c468224-3253-4df1-8b75-5aee244bbff2.JPG)
 
