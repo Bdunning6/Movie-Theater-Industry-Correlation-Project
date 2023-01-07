@@ -8,6 +8,21 @@ Movie theaters have been a vital part of the motion picture industry for a long 
 ## Objectives
 
 ## Dataset ([Link to dataset](https://www.kaggle.com/datasets/danielgrijalvas/movies))
-
+The data set was found on Kaggle. There are 7668 rows and 15 columns. The 15 columns are:
+* **Name:** The name of the film.
+* **Rating:** The rating of the film.
+* **Genre:** The genre of the film.
+* **Year:** The year the film was released.
+* **Released:** The date the film was released.
+* **Score:** The IMDB user score of the film.
+* **Votes:** The number of votes a film has recieved.
+* **Director:** Director of the film.
+* **Writer:** Writer of the film.
+* **Star:** The main actors or actresses of the film.
+* **Country:** Country where the film was produced.
+* **Budget:** The budget of the film.
+* **Gross:** The gross profit of the film.
+* **Company:** The company that produced the film.
+* **Runetime:** Runtime of the film.
 
 
