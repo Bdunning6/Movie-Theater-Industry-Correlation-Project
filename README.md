@@ -36,4 +36,11 @@ Importing the data set.
 # Overview of Data
 In order to begin, we should seek to develop a basic understanding of the data that we are working with. Let's use the df method to get a general overview of the dataframe. 
 ![DF](https://user-images.githubusercontent.com/115194266/211174285-5c468224-3253-4df1-8b75-5aee244bbff2.JPG)
+### Top 5 rows
+![Df Head](https://user-images.githubusercontent.com/115194266/211174507-88013fe4-a8bc-4d79-8999-a4b05092307e.JPG)
+### Bottom 5 rows
+![Df Tail](https://user-images.githubusercontent.com/115194266/211174541-fab3bd72-51e2-4408-9600-b6af85bec25b.JPG)
+
+## Data Cleaning
+Before any meaningfuly analysis can begin, we should detect any missing values and clean the data. We can start by checking the data type of the variables.
 
