@@ -57,4 +57,4 @@ For the object/string variables, we will impute text strings that state no infor
 ![image](https://user-images.githubusercontent.com/115194266/211687843-e01c053a-6c16-4333-bcb3-f4b615f74615.png)
 * For the country column, the missing values can be replaced with "No country of origin provided".
 * And lastly for the company column, the missing values can be replaced with "No production company provided".
-
+Now that the missing object/string columns are taken care of, we can move onto the gross and budget columns. 
