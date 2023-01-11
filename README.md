@@ -34,13 +34,27 @@ Importing the data set.
 ![Pandas Data Import](https://user-images.githubusercontent.com/115194266/211174190-bd309ce2-8f29-4127-942d-1bc6fbd5573e.JPG)
 
 # Overview of Data
-In order to begin, we should seek to develop a basic understanding of the data that we are working with. Let's use the df method to get a general overview of the dataframe. 
-![DF](https://user-images.githubusercontent.com/115194266/211174285-5c468224-3253-4df1-8b75-5aee244bbff2.JPG)
+In order to begin, we should seek to develop a basic understanding of the data that we are working with. Let's use the df head and tail methods to get a general overview of the dataframe. 
 ### Top 5 rows
 ![Df Head](https://user-images.githubusercontent.com/115194266/211174507-88013fe4-a8bc-4d79-8999-a4b05092307e.JPG)
 ### Bottom 5 rows
 ![Df Tail](https://user-images.githubusercontent.com/115194266/211174541-fab3bd72-51e2-4408-9600-b6af85bec25b.JPG)
 
 ## Data Cleaning
-Before any meaningfuly analysis can begin, we should detect any missing values and clean the data. We can start by checking the data type of the variables.
+Before any meaningfuly analysis can begin, we should detect any missing values and clean the data. 
+![image](https://user-images.githubusercontent.com/115194266/211684627-fbcaacf2-343d-4608-b3b5-0d78198ea77e.png)
+We can see there are 11 columns with missing values. Most of the columns have a relatively small amount of missing values besides the budget column. After doing a bit of research to find out why there were missing values, the owner of the Kaggle data stated that some of information for the movies on IMDB were blank. We will be using a few impuation methods in order to fill in these values. We need to first look at the data types before we move foward with any sort of imputation. 
+![image](https://user-images.githubusercontent.com/115194266/211686216-52ae2ac4-15c6-4655-b78f-ad343df6b2da.png)
+
+For the object/string variables, we will impute text strings that state no information was provided.
+* For the rating column, the missing values can be replaced with "No rating provided".
+![image](https://user-images.githubusercontent.com/115194266/211686877-f594635f-8d89-47cc-ad7a-44011eafdb0e.png)
+* For the released column, the missing values can be replaced with "No release date provided".
+![image](https://user-images.githubusercontent.com/115194266/211687681-4e1c2ba2-3774-4fa5-8b1f-41fd8cf5c7df.png)
+* For the writers column, the missing values can be replaced with "No film writers provided".
+![image](https://user-images.githubusercontent.com/115194266/211687627-971c3d60-ca9b-41d2-93b2-faf24ab3bcff.png)
+* For the star column, the missing values can be replaced with "No star name provided".
+![image](https://user-images.githubusercontent.com/115194266/211687843-e01c053a-6c16-4333-bcb3-f4b615f74615.png)
+* For the country column, the missing values can be replaced with "No country of origin provided".
+* And lastly for the company column, the missing values can be replaced with "No production company provided".
 
