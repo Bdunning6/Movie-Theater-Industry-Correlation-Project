@@ -92,11 +92,13 @@ Although it's a little difficult to see, the optimal number of clusters for this
 We can see that there is no more missing data in any of the columns. Since the data is cleaned, we can start to begin analysis.
 ![image](https://user-images.githubusercontent.com/115194266/211926177-1fe243b9-2acf-48b7-9dd7-b7d621312b5b.png)
 
+To finish off cleaning the data, let's convert
+
 ## Visual Analysis
 A key component of this project project is understanding what makes movie theaters succesful. To answer that, we need to develop insights on what makes a film. We can develop these insights by answering these questions.
 * What genres of film bring in the greatest gross profit?
 * Do certain film ratings perform better than others?
 
-# Genre Versus Gross 
+### Genre Versus Gross 
 
 
