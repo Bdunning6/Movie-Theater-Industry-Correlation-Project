@@ -62,7 +62,7 @@ For the object/string variables, we will impute text strings that state no infor
 
 Now that the missing object columns are taken care of, we can move onto the gross, budget,votes and runtime columns. Since the number of missing values in these columns are numeric and are more significant for our analysis, we will use KNN imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. In a seperate notebook we can use the Elbow Method in order to determine and visualize what the optimal number of clusters should be.
 
-### Elbow Method
+## Utilizing the Elbow Method
 Using a seperate workbook, we can use the elbow method to find the optimal number of clusters to use for our KNN imputation. First we must import the relevant modules  and the data. 
 ![image](https://user-images.githubusercontent.com/115194266/211922559-99a338e3-cd6c-419e-a3b5-2d53afaa8884.png)
 
@@ -81,7 +81,7 @@ Now that the object columns have been encoded, we can begin to began by standard
 From there we need to create the Kmeans parameters that will determine the optimal K-value. We will 10 for the total amount of clusters that we want to test.
 ![image](https://user-images.githubusercontent.com/115194266/211923408-ee81b167-1e36-4951-82ff-179dfcce0cea.png)
 
-After we set up the parameters, we can then create a list that will determine the SSE values for each K-value. We use the list range 1-11 so that the created list will determine the SSE values for K 1-10. After running this code, we can then develop a visualize to use the elbow method to find the optimal amount of clusters to be use for imputation.
+After we set up the parameters, we can then create a list that will determine the SSE values for each K-value. We use the list range 1-11 so that the created list will determine the SSE values for K 1-10. After running this code, we can then develop a visualization to use the elbow method to find the optimal amount of clusters to be use for imputation.
 ![image](https://user-images.githubusercontent.com/115194266/211924463-f65420a1-c206-4ac1-98cf-e866ba456c0d.png)
 
 Developing the visualization to display the number clusters versus SSE.
@@ -89,12 +89,18 @@ Developing the visualization to display the number clusters versus SSE.
 Although it's a little difficult to see, the optimal number of clusters for this dataset seem to be 2 because that's where the line bends, similar to a elbow.. Let's return to the original workbook and finish cleaning the data by using KNN imputation.
 ![image](https://user-images.githubusercontent.com/115194266/211925703-1487a6e4-8daa-4a77-bfdb-6dde56ee106d.png)
 
-We can see that there is no more missing data in any of the columns. Since the data is cleaned, we can start to begin analysis.
+We can see that there is no more missing data in any of the columns. 
 ![image](https://user-images.githubusercontent.com/115194266/211926177-1fe243b9-2acf-48b7-9dd7-b7d621312b5b.png)
 
-To finish off cleaning the data, let's convert
+Finishing cleaning the data. The score, budget and gross columns can be converted from float values into intergers to reduce redundancy.
+![image](https://user-images.githubusercontent.com/115194266/212202022-1b97041a-4c95-47d2-9586-cbb8977bd946.png)
+
 
 ## Correlation Analysis
+Now that the data is cleaned, we can begin to analyze and develop insights on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can see if two variables within the data set have a linear relationship. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit. We can start by visualizing the correlation of some of the variables using a regression plot. 
+
+### Budget Vs Gross Earnings
+![image](https://user-images.githubusercontent.com/115194266/212205922-e7968a58-a8db-4943-bd07-08b70cb40a6d.png)
 
 
 
