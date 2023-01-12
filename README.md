@@ -1,4 +1,4 @@
-# Movie Theater Industry Analysis and Correlation Project
+# Movie Theater Industry Correlation and Visualization Project
 
 
 ![blankenbaker-14](https://user-images.githubusercontent.com/115194266/211164070-aa772601-c268-49c7-aa1c-1e6de74502e3.jpg)
@@ -94,11 +94,7 @@ We can see that there is no more missing data in any of the columns. Since the d
 
 To finish off cleaning the data, let's convert
 
-## Visual Analysis
-A key component of this project project is understanding what makes movie theaters succesful. To answer that, we need to develop insights on what makes a film. We can develop these insights by answering these questions.
-* What genres of film bring in the greatest gross profit?
-* Do certain film ratings perform better than others?
+## Correlation Analysis
 
-### Genre Versus Gross 
 
 
