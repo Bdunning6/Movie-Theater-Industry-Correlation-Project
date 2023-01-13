@@ -92,15 +92,15 @@ Although it's a little difficult to see, the optimal number of clusters for this
 We can see that there is no more missing data in any of the columns. 
 ![image](https://user-images.githubusercontent.com/115194266/211926177-1fe243b9-2acf-48b7-9dd7-b7d621312b5b.png)
 
-Finishing cleaning the data. The score, budget and gross columns can be converted from float values into intergers to reduce redundancy.
-![image](https://user-images.githubusercontent.com/115194266/212202022-1b97041a-4c95-47d2-9586-cbb8977bd946.png)
+
 
 
 ## Correlation Analysis
-Now that the data is cleaned, we can begin to analyze and develop insights on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can see if two variables within the data set have a linear relationship. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit. We can start by visualizing the correlation of some of the variables using a regression plot. 
+Now that the data is cleaned, we can begin to analyze and develop insights on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit. We can start by visualizing the correlation of some of the variables using a regression plot. 
 
 ### Budget Vs Gross Earnings
-![image](https://user-images.githubusercontent.com/115194266/212205922-e7968a58-a8db-4943-bd07-08b70cb40a6d.png)
+![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
+
 
 
 
