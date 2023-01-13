@@ -4,30 +4,30 @@
 ![blankenbaker-14](https://user-images.githubusercontent.com/115194266/211164070-aa772601-c268-49c7-aa1c-1e6de74502e3.jpg)
 ## Table of contents
 ## Introduction
-Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing film producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a film will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? Through this project, I will analyze what makes a movie succesfull and develop a business statetgy that allows for theaters to adapt in order to remain profitable in the future. (Maybe some statistics about the rise of streaming services and closing theaters to make a more quantiative point?)
+Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
 
 ## Objectives
 
 ## Dataset ([Link to dataset](https://www.kaggle.com/datasets/danielgrijalvas/movies))
 The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 columns. The 15 columns are:
-* **Name:** The name of the film.
-* **Rating:** The rating of the film.
-* **Genre:** The genre of the film.
-* **Year:** The year the film was released.
-* **Released:** The date the film was released.
-* **Score:** The IMDB user score of the film.
-* **Votes:** The number of votes a film has recieved.
-* **Director:** Director of the film.
-* **Writer:** Writer of the film.
-* **Star:** The main actors or actresses of the film.
-* **Country:** Country where the film was produced.
-* **Budget:** The budget of the film.
-* **Gross:** The gross profit of the film.
-* **Company:** The company that produced the film.
-* **Runetime:** Runtime of the film.
+* **Name:** The name of the movie.
+* **Rating:** The rating of the movie.
+* **Genre:** The genre of the movie.
+* **Year:** The year the movie was released.
+* **Released:** The date the movie was released.
+* **Score:** The IMDB user score of the movie.
+* **Votes:** The number of votes a movie has recieved.
+* **Director:** Director of the movie.
+* **Writer:** Writer of the movie.
+* **Star:** The main actors or actresses of the movie.
+* **Country:** Country where the movie was produced.
+* **Budget:** The budget of the movie.
+* **Gross:** The gross profit of the movie.
+* **Company:** The company that produced the movie.
+* **Runetime:** Runtime of the movie.
 
 ## Importing the Libaries and Dataset Into Python
-Let's begin by importing the pandas, seaborn, numpy and matplotlib libaries. 
+Importing the pandas, seaborn, numpy and matplotlib libaries. 
 ![Import Libaries Image](https://user-images.githubusercontent.com/115194266/211173986-a20effb5-10a5-4a46-bd06-3a8c95e85f7c.JPG)
 
 Importing the data set.
@@ -41,7 +41,7 @@ In order to begin, we should seek to develop a basic understanding of the data t
 ![Df Tail](https://user-images.githubusercontent.com/115194266/211174541-fab3bd72-51e2-4408-9600-b6af85bec25b.JPG)
 
 ## Data Cleaning
-Before any meaningfuly analysis can begin, we should detect any missing values and clean the data. 
+Beginning the data cleaning process by detecting missing values and summing them up based upon their column. 
 ![image](https://user-images.githubusercontent.com/115194266/211684627-fbcaacf2-343d-4608-b3b5-0d78198ea77e.png)
 We can see there are 11 columns with missing values. Most of the columns have a relatively small amount of missing values besides the budget column. After doing a bit of research to find out why there were missing values, the owner of the Kaggle data stated that some of information for the movies on IMDB were blank. We will be using a few impuation methods in order to fill in these values. We need to first look at the data types before we move foward with any sort of imputation. 
 ![image](https://user-images.githubusercontent.com/115194266/211686216-52ae2ac4-15c6-4655-b78f-ad343df6b2da.png)
@@ -62,45 +62,49 @@ For the object/string variables, we will impute text strings that state no infor
 
 Now that the missing object columns are taken care of, we can move onto the gross, budget,votes and runtime columns. Since the number of missing values in these columns are numeric and are more significant for our analysis, we will use KNN imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. In a seperate notebook we can use the Elbow Method in order to determine and visualize what the optimal number of clusters should be.
 
-## Utilizing the Elbow Method
-Using a seperate workbook, we can use the elbow method to find the optimal number of clusters to use for our KNN imputation. First we must import the relevant modules  and the data. 
+### Utilizing the Elbow Method
+Using a seperate workbook, the elbow method can be used to find the optimal number of clusters to use for our KNN imputation. To start, the relevant modules must be imported. 
 ![image](https://user-images.githubusercontent.com/115194266/211922559-99a338e3-cd6c-419e-a3b5-2d53afaa8884.png)
 
-Then we must drop all missing and infinite values from the dataframe. 
+Dropping missing and infinite values from the dataframe. 
 ![image](https://user-images.githubusercontent.com/115194266/211919943-3062062c-5295-4532-a726-2bc97f53e24d.png)
 
-Next a label encoder must be imported and used in order to convert the object columns into a numeric form which machine learning readable. 
+Next a label encoder can be imported and used in order to convert the object columns into a numeric form which machine learning readable. 
 ![image](https://user-images.githubusercontent.com/115194266/211920254-9b57fe54-9020-4ddc-9e1d-d2669e15d82f.png)
 
-We can then use the df.head() function to see if the label encoder was a success.
+Checking the data by using the df.head() function to see if the label encoder was a success.
 ![image](https://user-images.githubusercontent.com/115194266/211920368-867108cd-7ea4-42a5-af7c-d1c999554b5e.png)
 
-Now that the object columns have been encoded, we can begin to began by standardizing data using the standard scaler we imported earlier.
+Now that the object columns have been encoded, the proccess of standardizing data using the standard scaler can begin.
 ![image](https://user-images.githubusercontent.com/115194266/211923011-df75e28f-2bd0-4e0a-94a7-b3a84866af36.png)
 
-From there we need to create the Kmeans parameters that will determine the optimal K-value. We will 10 for the total amount of clusters that we want to test.
+Creating the Kmeans parameters that will determine the optimal K-value. There will be 10 for the total amount of clusters that will be tested.
 ![image](https://user-images.githubusercontent.com/115194266/211923408-ee81b167-1e36-4951-82ff-179dfcce0cea.png)
 
-After we set up the parameters, we can then create a list that will determine the SSE values for each K-value. We use the list range 1-11 so that the created list will determine the SSE values for K 1-10. After running this code, we can then develop a visualization to use the elbow method to find the optimal amount of clusters to be use for imputation.
+After setting up the parameters, a list can be created that will determine the SSE values for each K-value. We will use the range 1-11 so that the created list will determine the SSE values for K 1-10. After running this code, a visualization can be created to use the elbow method to find the optimal amount of clusters to use for imputation.
 ![image](https://user-images.githubusercontent.com/115194266/211924463-f65420a1-c206-4ac1-98cf-e866ba456c0d.png)
 
 Developing the visualization to display the number clusters versus SSE.
 ![image](https://user-images.githubusercontent.com/115194266/211924863-b4fc9735-a301-4a7f-aecc-9cabc754ccf4.png)
-Although it's a little difficult to see, the optimal number of clusters for this dataset seem to be 2 because that's where the line bends, similar to a elbow.. Let's return to the original workbook and finish cleaning the data by using KNN imputation.
+Although it's a little difficult to see, the optimal number of clusters for this dataset seem to be 2 because that's where the line bends, representing an elbow. Let's return to the original workbook and finish cleaning the data by using KNN imputation with the number of clusters set to two.
 ![image](https://user-images.githubusercontent.com/115194266/211925703-1487a6e4-8daa-4a77-bfdb-6dde56ee106d.png)
 
-We can see that there is no more missing data in any of the columns. 
+### Finishing the data cleaning process
+There is no more missing data in any of the columns. 
 ![image](https://user-images.githubusercontent.com/115194266/211926177-1fe243b9-2acf-48b7-9dd7-b7d621312b5b.png)
 
+For some of the rows, the year column is incorrect. The release date provides a more accurate description on what year the movie actually released. An extraction of the year from the released column can fix this.
+![image](https://user-images.githubusercontent.com/115194266/212426983-4f4f8582-a728-4ef2-9340-5522951f08a3.png)
 
+Finishing the data cleaning process by dropping duplicates rows.
+![image](https://user-images.githubusercontent.com/115194266/212426701-68f4d554-f6de-4be0-ad71-21056e6c5e6a.png)
 
-
-## Correlation Analysis
-Now that the data is cleaned, we can begin to analyze and develop insights on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit. We can start by visualizing the correlation of some of the variables using a regression plot. 
+## Visualizing Regression Plots
+Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit or a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
 
 ### Budget Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
-
+According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Production, marketing, actors.
 
 
 
