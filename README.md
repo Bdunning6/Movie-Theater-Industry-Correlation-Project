@@ -76,8 +76,9 @@ To reduce a high level a varience, a standard scaler can be imported and fitted 
 Creating the Within Clusters Sum of Squares model. A for loop can be created with the range of 1-11 to test the number of clusters from 1-10. The results then will be plotted with the number of clusters on the X-axis and the WCSS (Within Cluster Sum of Squares) on the Y-axis.
 ![image](https://user-images.githubusercontent.com/115194266/212753178-e3244bc5-841a-4bb4-af20-4320a859ecee.png)
 
-We can see that the lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
-![image](https://user-images.githubusercontent.com/115194266/212753418-7b31e950-b856-4896-af06-ddf8bf5e75f0.png)
+We can see that therer are two bends in the graph at K=2 and K=3. The lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
+![image](https://user-images.githubusercontent.com/115194266/212780453-b967cddb-8eca-4afb-8e87-7b8796d40969.png)
+
 
 Using the KNN imputer to impute the missing values for the score, budget, gross, votes and runtime columns. Using the number 3 as the number of nearest neighbors or k-value.
 ![image](https://user-images.githubusercontent.com/115194266/212753911-0798f12b-2125-48cd-9964-b44cbc0bff31.png)
@@ -98,11 +99,17 @@ Finishing the data cleaning process by dropping duplicates rows.
 ![image](https://user-images.githubusercontent.com/115194266/212426701-68f4d554-f6de-4be0-ad71-21056e6c5e6a.png)
 
 ## Visualizing Regression Plots
-Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain properties of movies are more likely to lead to a higher gross profit or a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
+Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
 
 ### Budget Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
-According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Production, marketing, actors.
+According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology is used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies at more theaters and across more platforms. Let's continue with another regression plot on Score Vs Gross Earnings.
+
+### IMDB Score Vs Gross Earnings
+![image](https://user-images.githubusercontent.com/115194266/212781203-25ea2db4-3dd3-4489-b209-cb0422ce44c1.png)
+
+
+
 
 
 
