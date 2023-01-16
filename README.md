@@ -60,34 +60,32 @@ For the object/string variables, we will impute text strings that state no infor
 * And lastly for the company column, the missing values can be replaced with "No production company provided".
 ![image](https://user-images.githubusercontent.com/115194266/211916657-9ac5149c-24a5-4de3-84dd-1b6c2876a20c.png)
 
-Now that the missing object columns are taken care of, we can move onto the gross, budget,votes and runtime columns. Since the number of missing values in these columns are numeric and are more significant for our analysis, we will use KNN imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. In a seperate notebook we can use the Elbow Method in order to determine and visualize what the optimal number of clusters should be.
+Now that the missing object columns are taken care of, we can move onto the gross, budget,votes and runtime columns. Since the number of missing values in these columns are numeric and are more significant for our analysis, we will use KNN imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. In a seperate notebook we can use the Within Clusters Sum of Squares and the Elbow Method in order to determine and visualize what the optimal number of clusters should be.
 
 ### Utilizing the Elbow Method
-Using a seperate workbook, the elbow method can be used to find the optimal number of clusters to use for our KNN imputation. To start, the relevant modules must be imported. 
-![image](https://user-images.githubusercontent.com/115194266/211922559-99a338e3-cd6c-419e-a3b5-2d53afaa8884.png)
+Using a seperate notebook, the needed libaries and data can be imported.
+![image](https://user-images.githubusercontent.com/115194266/212750593-ee7bcece-6b77-4c19-94f9-ff5851c6af3e.png)
 
-Dropping missing and infinite values from the dataframe. 
-![image](https://user-images.githubusercontent.com/115194266/211919943-3062062c-5295-4532-a726-2bc97f53e24d.png)
+A dataframe can be created containing the columns that have missing values. The missing values will be dropped from this data frame in order to find the opitmal K value.
 
-Next a label encoder can be imported and used in order to convert the object columns into a numeric form which machine learning readable. 
-![image](https://user-images.githubusercontent.com/115194266/211920254-9b57fe54-9020-4ddc-9e1d-d2669e15d82f.png)
+![image](https://user-images.githubusercontent.com/115194266/212750920-4fc9d30c-9509-413d-b03d-770d4000a8c2.png)
 
-Checking the data by using the df.head() function to see if the label encoder was a success.
-![image](https://user-images.githubusercontent.com/115194266/211920368-867108cd-7ea4-42a5-af7c-d1c999554b5e.png)
+To reduce a high level a varience, a standard scaler can be imported and fitted to the dataframe in order to standardize the data.
+![image](https://user-images.githubusercontent.com/115194266/212751373-cc420a39-8d67-469e-a223-6df71a979f80.png)
 
-Now that the object columns have been encoded, the proccess of standardizing data using the standard scaler can begin.
-![image](https://user-images.githubusercontent.com/115194266/211923011-df75e28f-2bd0-4e0a-94a7-b3a84866af36.png)
+Creating the Within Clusters Sum of Squares model. A for loop can be created with the range of 1-11 to test the number of clusters from 1-10. The results then will be plotted with the number of clusters on the X-axis and the WCSS (Within Cluster Sum of Squares) on the Y-axis.
+![image](https://user-images.githubusercontent.com/115194266/212753178-e3244bc5-841a-4bb4-af20-4320a859ecee.png)
 
-Creating the Kmeans parameters that will determine the optimal K-value. There will be 10 for the total amount of clusters that will be tested.
-![image](https://user-images.githubusercontent.com/115194266/211923408-ee81b167-1e36-4951-82ff-179dfcce0cea.png)
+We can see that the lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
+![image](https://user-images.githubusercontent.com/115194266/212753418-7b31e950-b856-4896-af06-ddf8bf5e75f0.png)
 
-After setting up the parameters, a list can be created that will determine the SSE values for each K-value. We will use the range 1-11 so that the created list will determine the SSE values for K 1-10. After running this code, a visualization can be created to use the elbow method to find the optimal amount of clusters to use for imputation.
-![image](https://user-images.githubusercontent.com/115194266/211924463-f65420a1-c206-4ac1-98cf-e866ba456c0d.png)
+Using the KNN imputer to impute the missing values for the score, budget, gross, votes and runtime columns. Using the number 3 as the number of nearest neighbors or k-value.
+![image](https://user-images.githubusercontent.com/115194266/212753911-0798f12b-2125-48cd-9964-b44cbc0bff31.png)
 
-Developing the visualization to display the number clusters versus SSE.
-![image](https://user-images.githubusercontent.com/115194266/211924863-b4fc9735-a301-4a7f-aecc-9cabc754ccf4.png)
-Although it's a little difficult to see, the optimal number of clusters for this dataset seem to be 2 because that's where the line bends, representing an elbow. Let's return to the original workbook and finish cleaning the data by using KNN imputation with the number of clusters set to two.
-![image](https://user-images.githubusercontent.com/115194266/211925703-1487a6e4-8daa-4a77-bfdb-6dde56ee106d.png)
+Reevaluating to see if there's any missing data. There is none.
+
+![image](https://user-images.githubusercontent.com/115194266/212754150-3392feb5-5b98-4a17-b37d-821b94777fe4.png)
+
 
 ### Finishing the data cleaning process
 There is no more missing data in any of the columns. 
