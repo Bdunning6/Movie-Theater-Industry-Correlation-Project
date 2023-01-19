@@ -111,6 +111,6 @@ The IMDB score is calculated through an aggregation of user ratings and then sum
 
 ### Heat Map of Numeric Variables 
 ![image](https://user-images.githubusercontent.com/115194266/213324575-ddddfe1a-de13-4666-ab83-885560e08533.png)
-A heat map can be used to display 
+A heat map can be used to display correlations between multiple variables. By using a heat map, we can display 
 
 
