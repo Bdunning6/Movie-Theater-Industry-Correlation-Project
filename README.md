@@ -26,7 +26,10 @@ The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 c
 * **Company:** The company that produced the movie.
 * **Runetime:** Runtime of the movie.
 
-## Importing the Libaries and Dataset Into Python
+## Preparing the Data
+
+### Importing the libaries and importing the data set.
+
 Importing the pandas, seaborn, numpy and matplotlib libaries. 
 ![Import Libaries Image](https://user-images.githubusercontent.com/115194266/211173986-a20effb5-10a5-4a46-bd06-3a8c95e85f7c.JPG)
 
@@ -111,6 +114,6 @@ The IMDB score is calculated through an aggregation of user ratings and then sum
 
 ### Heat Map of Numeric Variables 
 ![image](https://user-images.githubusercontent.com/115194266/213324575-ddddfe1a-de13-4666-ab83-885560e08533.png)
-A heat map can be used to display correlations between multiple variables. By using a heat map, we can display 
+A heat map can be used to display correlations between multiple variables. By using a heat map, we can display the correlations between all the numeric variables in this data set. It also allows us how to quantify how strong the correlation is between two variables rather than just visualizing it compared to the methods above. The strongest correlation is between budget and gross with a correlation of .75. The second strongest correlational relationship is between votes and gross with a .63. Votes represents the total number of user ratings a movie has receieved. This is a much stronger relationship compared to score and gross, which only has a correlation of .19. Comparing these two correlations, it's clear that the number of votes/reviews are more indicative of gross profit than a movies IMDB score. Another noteworthy correlational relationship is budget and votes with a correlation of .49, which is the third highest amongst all the numeric variables. This suggests that a higher budget also leads to a higher amount of exposure which in turn leads to more reviews. 
 
 
