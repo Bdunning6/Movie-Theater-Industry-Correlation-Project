@@ -98,18 +98,19 @@ For some of the rows, the year column is incorrect. The release date provides a 
 Finishing the data cleaning process by dropping duplicates rows.
 ![image](https://user-images.githubusercontent.com/115194266/212426701-68f4d554-f6de-4be0-ad71-21056e6c5e6a.png)
 
-## Visualizing Regression Plots
+## Visualizing Scatter Plots
 Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
 
 ### Budget Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
-According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology is used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies at more theaters and across more platforms. Let's continue with another regression plot on Score Vs Gross Earnings.
+According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology is used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies at more theaters and across more platforms. Let's continue with another scatter plot visualization using the Score and Gross Earning variables.
 
 ### IMDB Score Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212781203-25ea2db4-3dd3-4489-b209-cb0422ce44c1.png)
+The IMDB score is calculated through an aggregation of user ratings and then summarized as a single rating for the movie title. This metric can be used to gauge how well the audience favored a movie. In the second visualization, there appears to be a slight positive correlation between IMDB score and Gross, but the relationship between these two variables appears to be much weaker compared to the first scatter plot. This indicates that how favorably a movie was rated on IMDB has a smaller affect on how much gross earnings a movie produces. Movies that are favored by the audiences and critics will tend to perform better financially but the rating is not as an important contributing factor compared to a movies production budget. Next let's use a heat map to see how all the numeric variables correlate with each other.
 
-
-
-
+### Heat Map of Numeric Variables 
+![image](https://user-images.githubusercontent.com/115194266/213324575-ddddfe1a-de13-4666-ab83-885560e08533.png)
+A heat map can be used to display 
 
 
