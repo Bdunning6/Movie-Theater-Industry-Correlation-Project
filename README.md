@@ -126,6 +126,15 @@ To see the correlations between the non-numeric variables and numeric variables,
 
 ### Heatmap with Non-Numeric and Numeric Variables
 ![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
-Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. But we can also see there is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an opitmal runtime for a movie a to be favored viewers. There are also moderate negative correations as well. There is a negative correlation between genre and budget numbered at -.33. There is also another negative correlation between genre and gross scored at a -.23. Both of negative correlations could indicate that certain genre's of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profit compared to an indie comedy movie. We can answer 
+Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an opitmal runtime for a movie a to be favored by viewers. There are also moderate negative correations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both of these negative correlations could indicate that certain genre's of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a low budget comedy film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project. Before we move on, let's summarize which variables have the strongest correlations.
+
+### Summary of Strongest Positive Correlations
+![image](https://user-images.githubusercontent.com/115194266/213810624-b340cced-6efb-4b68-a2dd-d87b89af5df3.png)
+![image](https://user-images.githubusercontent.com/115194266/213810742-528b82ce-8406-41c1-bebe-248b7ed0c7d9.png)
+![image](https://user-images.githubusercontent.com/115194266/213810819-9a05b5ee-9065-4748-a80e-2aa5e84d4b2e.png)
+
+## Visualizing insights using PowerBi
+
+
 
 
