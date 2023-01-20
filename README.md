@@ -107,7 +107,7 @@ Now that the data is cleaned, we can begin to analyze the factor on what makes m
 
 ### Budget Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
-According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This indicates that movies with a higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology is used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies at more theaters and across more platforms. Let's continue with another scatter plot visualization using the score and gross Earning variables.
+According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This demonstrates that movies with higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology can be used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies across more theaters and platforms. Let's continue with another scatter plot visualization using the score and gross Earning variables.
 
 ### IMDB Score Vs Gross Earnings
 ![image](https://user-images.githubusercontent.com/115194266/212781203-25ea2db4-3dd3-4489-b209-cb0422ce44c1.png)
@@ -122,7 +122,7 @@ Looking at this heat map, we can see that the strongest correlational relationsh
 ### Correlation of Non-Numeric and Numeric Variables 
 ![image](https://user-images.githubusercontent.com/115194266/213799950-62e7eb6d-4464-4cc2-bb7a-35ed5e4cfd2f.png)
 
-To see the correlations between the non-numeric variables and numeric variables, we can convert the object variables into numerized catcodes. By doing this, we can see for example if a movies genre is correlated to it's gross profit. Now that the object variables are converted, let's create a new map with all the columns to analyze the correlations. 
+To see the correlations between the non-numeric variables and numeric variables, we can convert the object variables into numerized catcodes. By doing this, we can see  if a movies genre is correlated to it's gross profit or if directors and IMDB scores are correlated.. Now that the object variables are converted, let's create a new heat map with all the columns to analyze the correlations. 
 
 ### Heatmap with Non-Numeric and Numeric Variables
 ![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
@@ -133,7 +133,7 @@ Looking at the new heat map, we can still see gross and budget has the strongest
 ![image](https://user-images.githubusercontent.com/115194266/213810742-528b82ce-8406-41c1-bebe-248b7ed0c7d9.png)
 ![image](https://user-images.githubusercontent.com/115194266/213810819-9a05b5ee-9065-4748-a80e-2aa5e84d4b2e.png)
 
-## Visualizing insights using PowerBi
+## Visualizing with PowerBi
 
 
 
