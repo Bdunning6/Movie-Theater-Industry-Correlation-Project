@@ -79,11 +79,12 @@ To reduce a high level a varience, a standard scaler can be imported and fitted 
 Creating the Within Clusters Sum of Squares model. A for loop can be created with the range of 1-11 to test the number of clusters from 1-10. The results then will be plotted with the number of clusters on the X-axis and the WCSS (Within Cluster Sum of Squares) on the Y-axis.
 ![image](https://user-images.githubusercontent.com/115194266/212753178-e3244bc5-841a-4bb4-af20-4320a859ecee.png)
 
-We can see that therer are two bends in the graph at K=2 and K=3. The lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
+There are are two bends in the graph at K=2 and K=3. The lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. 
+We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
 ![image](https://user-images.githubusercontent.com/115194266/212780453-b967cddb-8eca-4afb-8e87-7b8796d40969.png)
 
 
-Using the KNN imputer to impute the missing values for the score, budget, gross, votes and runtime columns. Using the number 3 as the number of nearest neighbors or k-value.
+Using the KNN imputer to impute the missing values for the score, budget, gross, votes and runtime columns. Using the 3 as the number for the number nearest neighbors or k-value.
 ![image](https://user-images.githubusercontent.com/115194266/212753911-0798f12b-2125-48cd-9964-b44cbc0bff31.png)
 
 Reevaluating to see if there's any missing data. There is none.
@@ -101,7 +102,7 @@ For some of the rows, the year column is incorrect. The release date provides a 
 Finishing the data cleaning process by dropping duplicates rows.
 ![image](https://user-images.githubusercontent.com/115194266/212426701-68f4d554-f6de-4be0-ad71-21056e6c5e6a.png)
 
-## Visualizing Scatter Plots
+## Correlation
 Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
 
 ### Budget Vs Gross Earnings
@@ -118,5 +119,13 @@ A heat map can be used to display correlations between multiple variables. By us
 
 Looking at this heat map, we can see that the strongest correlational relationship is between budget and gross with a correlation of .75. We briefly went over why a higher budget might lead to higher gross earnings for a movie previously. The second strongest correlational relationship is between votes and gross with a correlation .63. Votes represents the total number of user ratings a movie has receieved. This is a much stronger relationship compared to score and gross, which only has a correlation of .19. Comparing these two correlations, it's clear that the number of votes/reviews are more indicative of gross profit than a movies IMDB score. Another noteworthy correlational relationship is between budget and votes with a correlation of .49, which is the third highest amongst all the numeric variables. This suggests that a higher budget also leads to a higher amount of exposure which in turn leads to more reviews and user votes. 
 
-### Correlation of Non-Numeric Variables and Numeric Variables 
+### Correlation of Non-Numeric and Numeric Variables 
+![image](https://user-images.githubusercontent.com/115194266/213799950-62e7eb6d-4464-4cc2-bb7a-35ed5e4cfd2f.png)
+
+To see the correlations between the non-numeric variables and numeric variables, we can convert the object variables into numerized catcodes. By doing this, we can see for example if a movies genre is correlated to it's gross profit. Now that the object variables are converted, let's create a new map with all the columns to analyze the correlations. 
+
+### Heatmap with Non-Numeric and Numeric Variables
+![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
+Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. But we can also see there is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an opitmal runtime for a movie a to be favored viewers. There are also moderate negative correations as well. There is a negative correlation between genre and budget numbered at -.33. There is also another negative correlation between genre and gross scored at a -.23. Both of negative correlations could indicate that certain genre's of movies receive a lower budget and gross profit compared to other genres. 
+
 
