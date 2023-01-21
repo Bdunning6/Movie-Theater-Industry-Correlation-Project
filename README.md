@@ -134,6 +134,8 @@ Looking at the new heat map, we can still see gross and budget has the strongest
 ![image](https://user-images.githubusercontent.com/115194266/213810819-9a05b5ee-9065-4748-a80e-2aa5e84d4b2e.png)
 
 ## Visualizing with PowerBi
+![image](https://user-images.githubusercontent.com/115194266/213839748-09e5a86f-b58f-4958-97f7-d9dcaaa54cc9.png)
+
 
 
 
