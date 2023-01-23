@@ -122,21 +122,41 @@ Looking at this heat map, we can see that the strongest correlational relationsh
 ### Correlation of Non-Numeric and Numeric Variables 
 ![image](https://user-images.githubusercontent.com/115194266/213799950-62e7eb6d-4464-4cc2-bb7a-35ed5e4cfd2f.png)
 
-To see the correlations between the non-numeric variables and numeric variables, we can convert the object variables into numerized catcodes. By doing this, we can see  if a movies genre is correlated to it's gross profit or if directors and IMDB scores are correlated.. Now that the object variables are converted, let's create a new heat map with all the columns to analyze the correlations. 
+To see the correlations between the non-numeric variables and numeric variables, we can convert the object variables into numerized catcodes. By doing this, we can see  if a movies genre is correlated to it's gross profit or if directors and IMDB scores are correlated. Now that the object variables are converted, a new heat map can be created with all the columns to analyze the correlations. 
 
 ### Heatmap with Non-Numeric and Numeric Variables
 ![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
-Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an opitmal runtime for a movie a to be favored by viewers. There are also moderate negative correations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both of these negative correlations could indicate that certain genre's of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a low budget comedy film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project. Before we move on, let's summarize which variables have the strongest correlations.
+Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an optimal runtime for a movie a to be favored by viewers. There are also moderate negative correlations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both negative correlations could indicate that certain genres of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a low budget comedy film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project.  Let's summarize which variables have the strongest correlations.
 
 ### Summary of Strongest Positive Correlations
 ![image](https://user-images.githubusercontent.com/115194266/213810624-b340cced-6efb-4b68-a2dd-d87b89af5df3.png)
 ![image](https://user-images.githubusercontent.com/115194266/213810742-528b82ce-8406-41c1-bebe-248b7ed0c7d9.png)
 ![image](https://user-images.githubusercontent.com/115194266/213810819-9a05b5ee-9065-4748-a80e-2aa5e84d4b2e.png)
 
-## Visualizing with PowerBi
-![image](https://user-images.githubusercontent.com/115194266/213839748-09e5a86f-b58f-4958-97f7-d9dcaaa54cc9.png)
+## Visualizing with PowerBI
+
+### Top Earning Movies and Movie Genres With Gross Profit 
+![image](https://user-images.githubusercontent.com/115194266/213940053-1d62c28d-6ea3-4377-9f0b-55ffe6a8281f.png)
+![image](https://user-images.githubusercontent.com/115194266/213940825-8119948c-d8f7-4fc7-8c51-9967d7132afe.png)
+
+The top total gross earning genres are action, comedy and animation. The total gross for action is about 243 billion dollars. This makes sense since some of the top movies earning movies are from the action genre, including the first Avatar movie (approximately 2.85 billion), Avengers: Endgame (approximately 2.80 billion) and Star Wars: Episode VII (approximately 2.07 billion). The top average gross earning genres are animation, family and action. A reason why animation and family movies generate the highest average gross could be because they are children friendly films. This means that movies of this genre could potentially generate more profit by selling larger volumes of tickets to parents, their children and other family members. Horror movies and rated R movies potentially excludes a large customer base in children because of age restrictions. This could explain why horror films have a lower average gross profit compared to animation and family movies. 
+
+### Movie Ratings And Average Gross Profits
+![image](https://user-images.githubusercontent.com/115194266/213945518-b86433f2-d96a-4610-8cf0-943fb56dc3ea.png)
+
+The top 4 average earning ratings are G, PG-13, TV-PG and PG. This reinforces the idea that more family friendly tend to generate more gross profit on average. Some of the top earning movies such as Avatar, Titanic, Star Wars: Episode VII and Avengers: Endgame are all rated PG-13. This indicates that part of a movies success is having a movie rating that is more accessible to a larger customer base such as children, which allows for a greater volume of ticket sales. 
+
+### Highest Budgeted Movies Compared to their Gross Profits
+![image](https://user-images.githubusercontent.com/115194266/213948567-ed8674c6-7ebd-47d0-ae39-799b165f1593.png)
+
+During the correlation part of this project, we saw that budget and gross profit had the strongest correlation with a .75. Here we are comparing the top 10 highest budgeted movies with their respective gross profits. Every movie was able to generate more profit than their budget, some more than others. This chart supports the idea that a movies budget is one of the biggest factors in what makes a movie financially succesful.
+
+## What Makes a Movie Succesful?
+Now that the correlation and visualization parts of this project are complete, we have a good idea on what makes a movie successful. Looking at correlations, the strongest indicator
+
+## Developing a Potential Business Strategy for Movie Theaters
 
 
-
+## References 
 
 
