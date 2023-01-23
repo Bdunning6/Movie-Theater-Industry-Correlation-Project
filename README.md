@@ -3,6 +3,8 @@
 
 ![blankenbaker-14](https://user-images.githubusercontent.com/115194266/211164070-aa772601-c268-49c7-aa1c-1e6de74502e3.jpg)
 ## Table of contents
+
+
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
 
@@ -106,14 +108,17 @@ Finishing the data cleaning process by dropping duplicates rows.
 Now that the data is cleaned, we can begin to analyze the factor on what makes movies succesful and begin to develop a strategy for the movie theater industry to remain succesful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general a insight.
 
 ### Budget Vs Gross Earnings
+
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
 According to the regression plot, there is an indication that a positive correlation between budget and gross profit exists. This demonstrates that movies with higher budgets tend to bring in more gross profit. Generally there's much more a company can do with a movie if it recieves a higher budget. A larger budget could mean that more expensive technology can be used, such as better cameras or more advanced CGI. An example of this is James Cameron's first Avatar movie, which at the time used state of the art CGI and motion capture technologies that factored into the movie costing over 230 million dollars. This paid off because the movie grossed a little over 2.9 billion dollars. With higher budgets, companies can hire more notable stars, market their movies more extensively and release their movies across more theaters and platforms. Let's continue with another scatter plot visualization using the score and gross Earning variables.
 
 ### IMDB Score Vs Gross Earnings
+
 ![image](https://user-images.githubusercontent.com/115194266/212781203-25ea2db4-3dd3-4489-b209-cb0422ce44c1.png)
 The IMDB score is calculated through an aggregation of user ratings and then summarized as a single rating for the movie title. This metric can be used to gauge how well the audience favored a movie. In the second visualization, there appears to be a slight positive correlation between IMDB score and Gross, but the relationship between these two variables appears to be much weaker compared to the first scatter plot. This indicates that how favorably a movie was rated on IMDB has a smaller affect on how much gross earnings a movie produces. Movies that are favored by the audiences and critics will tend to perform better financially but the rating is not as an important contributing factor compared to a movies production budget. Next let's use a heat map to see how all the numeric variables correlate with each other.
 
 ### Heat Map of Numeric Variables 
+
 ![image](https://user-images.githubusercontent.com/115194266/213324575-ddddfe1a-de13-4666-ab83-885560e08533.png)
 A heat map can be used to display correlations between multiple variables. By using a heat map, we can display the correlations between all the numeric variables in this data set.  A heat map uses color coding to represent lower and higher values. In this example, cooler colors such as purple and black represent lower correlations while the more hot colors such as orange and red represent higher correlations. It also allows us how to quantify how strong the correlation is between two variables rather than just visualizing it compared to the methods above. 
 
@@ -126,6 +131,7 @@ To see the correlations between the non-numeric variables and numeric variables,
 
 ### Heatmap with Non-Numeric and Numeric Variables
 ![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
+
 Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an optimal runtime for a movie a to be favored by viewers. There are also moderate negative correlations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both negative correlations could indicate that certain genres of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a low budget comedy film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project.  Let's summarize which variables have the strongest correlations.
 
 ### Summary of Strongest Positive Correlations
@@ -152,7 +158,15 @@ The top 4 average earning ratings are G, PG-13, TV-PG and PG. This reinforces th
 During the correlation part of this project, we saw that budget and gross profit had the strongest correlation with a .75. Here we are comparing the top 10 highest budgeted movies with their respective gross profits. Every movie was able to generate more profit than their budget, some more than others. This chart supports the idea that a movies budget is one of the biggest factors in what makes a movie financially succesful.
 
 ## What Makes a Movie Succesful?
-Now that the correlation and visualization parts of this project are complete, we have a good idea on what makes a movie successful. Looking at correlations, the strongest indicator
+
+### Budget
+Now that the correlation and visualization parts of this project are complete, we have a good idea on what makes a movie successful. Looking at correlations, the strongest indicator of a movies success is it's budget. Budget and gross had a correlation of .75, which is a strong positive correlation. Larger budgeted movies allows for more funds to be allocated towards things such as screenplay, story rights, music and other additonal production costs. A higher budget allows for movie production companies to hire more renowned actors. Popular actors help create a personal face for a movie and some viewers will choose to see a movie because their favor actor is in it. Additonaly, a higher budget allows production companies to ulitize state of the art movie production methods such as CGI and motion capture. 
+
+### IMDb Votes
+The second strongest correlation was between a movies number of votes on IMDb and it's gross profit with a correlation of .63. This is interesting because the correlation between a movies IMDb score was only a .19. The number of votes represents the total number of reviews for a movie on IMDb's page. The strong correlation between votes and gross tells us that a high quantity of reviews is much more important for a movies success compared to the average rating of a movie. Production companies should seek to have their movies reviewed by as many critics and regular viewers as possible to optimize their success in theaters. 
+
+### Genre and Rating
+
 
 ## Developing a Potential Business Strategy for Movie Theaters
 
