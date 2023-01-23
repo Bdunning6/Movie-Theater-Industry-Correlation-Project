@@ -3,12 +3,18 @@
 
 ![blankenbaker-14](https://user-images.githubusercontent.com/115194266/211164070-aa772601-c268-49c7-aa1c-1e6de74502e3.jpg)
 ## Table of contents
-
+1. [Introduction](#introduction)
+2. [Objectives](#objectives)
 
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
 
 ## Objectives
+* Develop a general understanding of the data.
+* Clean the data set of duplicates and missing values.
+* Use correlational methods to determine if there's any variables influence a movies sucess.
+* Develop visulizations to find any additonal key insights.
+* 
 
 ## Dataset ([Link to dataset](https://www.kaggle.com/datasets/danielgrijalvas/movies))
 The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 columns. The 15 columns are:
@@ -171,8 +177,13 @@ Although genre and rating had low correlations with gross, through our visualiza
 ## Developing a Potential Business Strategy for Movie Theaters
 
 ### Re-Releasing Historically Successful Movies
+Many movies theaters already re-release movies and have had a large amount of success. According to Boxofficemojo, the re-release of James Cameron's first Avatar movie made over 76 million world wide. Although this pales in compairson to the original box office release, it shows that the movie going customer base is still willing to watch previously released movies. Theaters could enhance this strategy by re-releasing certain movies on holidays. Movies that have performed well that are part of the horror genre could be released during the month of October. Additonaly, popular movies that fall under the romance genre could be re-released during the month of Feburary for Valentines Day. Furthermore, the unoffical holiday Star Wars holiday May 4th could been seen as an excellent time to re-release Star Wars movies. 
+![image](https://user-images.githubusercontent.com/115194266/214173290-b2bca10c-82ca-4ea2-917b-a68cf0cc48c2.png)
+![image](https://user-images.githubusercontent.com/115194266/214174633-58286d17-185b-4cfa-8ae0-c6794ab633dc.png)
+![image](https://user-images.githubusercontent.com/115194266/214173837-557be110-1ee5-4258-aadc-c85fbd763e51.png)
 
 ### Priortize Marketing and Screentime for High Budget Family Friendly Movies
+The highest grossing films fell under the G, PG and PG-13 ratings. The family, animation and action genres were the top average grossing genres. Through the correlational analysis, we found that a films budget had the strongest correlation with a films gross profit. Using this information, movie theaters should 
 
 ### Create a Unique Experience That Is Hard to Imitate
 
