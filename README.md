@@ -39,7 +39,7 @@ Importing the data set.
 ![Pandas Data Import](https://user-images.githubusercontent.com/115194266/211174190-bd309ce2-8f29-4127-942d-1bc6fbd5573e.JPG)
 
 ## Overview of Data
-In order to begin, we should seek to develop a basic understanding of the data that we are working with. Let's use the df head and tail methods to get a general overview of the dataframe. 
+
 ### Top 5 rows
 ![image](https://user-images.githubusercontent.com/115194266/211916457-1d0d36ee-f973-4e41-aada-8be02e4e433b.png)
 ### Bottom 5 rows
@@ -132,7 +132,7 @@ To see the correlations between the non-numeric variables and numeric variables,
 ### Heatmap with Non-Numeric and Numeric Variables
 ![image](https://user-images.githubusercontent.com/115194266/213800193-f68c505e-785e-40ff-bf15-7b4eeb60f84c.png)
 
-Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an optimal runtime for a movie a to be favored by viewers. There are also moderate negative correlations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both negative correlations could indicate that certain genres of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a low budget comedy film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project.  Let's summarize which variables have the strongest correlations.
+Looking at the new heat map, we can still see gross and budget has the strongest correlation of a .75. There is a moderate correlation between runtime and score, with a correlation of .40. This could suggest that there is an optimal runtime for a movie a to be favored by viewers. There are also moderate negative correlations as well. There is a negative correlation between genre and budget numbered at -.33. There is another negative correlation between genre and gross scored at a -.23. Both negative correlations could indicate that certain genres of movies could receive a lower budget and gross profit compared to other genres. Certain genres such as action movies that have high budgets may draw in higher gross profits compared to a romance film. We can seek to determine which genres have higher and lower budgets and gross profits during the visualization part of this project. Let's summarize which variables have the strongest correlations.
 
 ### Summary of Strongest Positive Correlations
 ![image](https://user-images.githubusercontent.com/115194266/213810624-b340cced-6efb-4b68-a2dd-d87b89af5df3.png)
@@ -141,13 +141,13 @@ Looking at the new heat map, we can still see gross and budget has the strongest
 
 ## Visualizing with PowerBI
 
-### Top Earning Movies and Movie Genres With Gross Profit 
+### Top Earning Movies and Movie Genres Ranked by Total and Average Gross Profits
 ![image](https://user-images.githubusercontent.com/115194266/213940053-1d62c28d-6ea3-4377-9f0b-55ffe6a8281f.png)
 ![image](https://user-images.githubusercontent.com/115194266/213940825-8119948c-d8f7-4fc7-8c51-9967d7132afe.png)
 
 The top total gross earning genres are action, comedy and animation. The total gross for action is about 243 billion dollars. This makes sense since some of the top movies earning movies are from the action genre, including the first Avatar movie (approximately 2.85 billion), Avengers: Endgame (approximately 2.80 billion) and Star Wars: Episode VII (approximately 2.07 billion). The top average gross earning genres are animation, family and action. A reason why animation and family movies generate the highest average gross could be because they are children friendly films. This means that movies of this genre could potentially generate more profit by selling larger volumes of tickets to parents, their children and other family members. Horror movies and rated R movies potentially excludes a large customer base in children because of age restrictions. This could explain why horror films have a lower average gross profit compared to animation and family movies. 
 
-### Movie Ratings And Average Gross Profits
+### Movie Ratings Ranked by Average Gross Profits
 ![image](https://user-images.githubusercontent.com/115194266/213945518-b86433f2-d96a-4610-8cf0-943fb56dc3ea.png)
 
 The top 4 average earning ratings are G, PG-13, TV-PG and PG. This reinforces the idea that more family friendly tend to generate more gross profit on average. Some of the top earning movies such as Avatar, Titanic, Star Wars: Episode VII and Avengers: Endgame are all rated PG-13. This indicates that part of a movies success is having a movie rating that is more accessible to a larger customer base such as children, which allows for a greater volume of ticket sales. 
@@ -163,14 +163,21 @@ During the correlation part of this project, we saw that budget and gross profit
 Now that the correlation and visualization parts of this project are complete, we have a good idea on what makes a movie successful. Looking at correlations, the strongest indicator of a movies success is it's budget. Budget and gross had a correlation of .75, which is a strong positive correlation. Larger budgeted movies allows for more funds to be allocated towards things such as screenplay, story rights, music and other additonal production costs. A higher budget allows for movie production companies to hire more renowned actors. Popular actors help create a personal face for a movie and some viewers will choose to see a movie because their favor actor is in it. Additonaly, a higher budget allows production companies to ulitize state of the art movie production methods such as CGI and motion capture. 
 
 ### IMDb Votes
-The second strongest correlation was between a movies number of votes on IMDb and it's gross profit with a correlation of .63. This is interesting because the correlation between a movies IMDb score was only a .19. The number of votes represents the total number of reviews for a movie on IMDb's page. The strong correlation between votes and gross tells us that a high quantity of reviews is much more important for a movies success compared to the average rating of a movie. Production companies should seek to have their movies reviewed by as many critics and regular viewers as possible to optimize their success in theaters. 
+The second strongest correlation was between a movies number of votes on IMDb and it's gross profit with a correlation of .63. This is interesting because the correlation between a movies IMDb score was only a .19. The number of votes represents the total number of reviews for a movie on IMDb's page. The strong correlation between votes and gross tells us that a high quantity of reviews is much more important for a movies success compared to the average rating of a movie. Production companies should seek to have their movies reviewed by as many critics and regular viewers as possible to optimize their success in theaters.
 
 ### Genre and Rating
-
+Although genre and rating had low correlations with gross, through our visualization analysis we saw that certain genres and ratings had more success than others. Genre and ratings often coincide as an indicator for a movies success. The animation, family and action genres had the highest average gross profits while the G, PG and PG-13 ratings had the highest average gross profits for ratings. Movies that are both family friendly in the genre and rating department are more likely to generate a greater gross due to the fact that these movies don't exclude children from their customer base by being too violent. The top 5 highest grossing movies of all time are all either PG or PG-13, which demonstrates how a movies rating can potentialy lead to higher success.
 
 ## Developing a Potential Business Strategy for Movie Theaters
 
+### Re-Releasing Historically Successful Movies
+
+### Priortize Marketing and Screentime for High Budget Family Friendly Movies
+
+### Create a Unique Experience That Is Hard to Imitate
 
 ## References 
+* Avatar 2022 re-release. Box Office Mojo. (n.d.). Retrieved January 22, 2023, from https://www.boxofficemojo.com/release/rl2319418113/ 
 
+* Raftery, B. (2022, March 31). *Here's what it will take for movie theaters to survive 10 years from now* EW.com. Retrieved January 22, 2023, from https://ew.com/movies/future-of-movie-theaters/ 
 
