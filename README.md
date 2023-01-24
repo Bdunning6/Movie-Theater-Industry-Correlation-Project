@@ -6,6 +6,8 @@
 1. [Introduction](#introduction)
 2. [Objectives](#objectives)
 3. [Dataset](#dataset)
+4. [Preparing the Data](#preparing-the-data)
+5. [Overview of Data](#overview-of-data)
 
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
