@@ -5,6 +5,7 @@
 ## Table of contents
 1. [Introduction](#introduction)
 2. [Objectives](#objectives)
+3. [Dataset](#dataset)
 
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
@@ -14,7 +15,8 @@ Movie theaters have been a vital part of the motion picture industry for a long 
 * Clean the data set of duplicates and missing values.
 * Use correlational methods to determine if there's any variables influence a movies sucess.
 * Develop visulizations to find any additonal key insights.
-* 
+* Determine what makes a movie succesful.
+* Create a potential business strategy that would allow for movie theaters to adapt and remain sucesful. 
 
 ## Dataset ([Link to dataset](https://www.kaggle.com/datasets/danielgrijalvas/movies))
 The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 columns. The 15 columns are:
@@ -183,12 +185,17 @@ Many movies theaters already re-release movies and have had a large amount of su
 ![image](https://user-images.githubusercontent.com/115194266/214173837-557be110-1ee5-4258-aadc-c85fbd763e51.png)
 
 ### Priortize Marketing and Screentime for High Budget Family Friendly Movies
-The highest grossing films fell under the G, PG and PG-13 ratings. The family, animation and action genres were the top average grossing genres. Through the correlational analysis, we found that a films budget had the strongest correlation with a films gross profit. Using this information, movie theaters should 
+The highest grossing films fell under the G, PG and PG-13 ratings. The family, animation and action genres were the top average grossing genres. Through the correlational analysis, we found that a films budget had the strongest correlation with a films gross profit. Using this information, movie theaters should priortize their marketing efforts towards movies that have higher budgets and fall under a family friendly genre and rating. By working more directly with movie production companies, movie theaters should seek to generate as attention as possible to upcoming releases and potential historicaly popular re-releases. Theaters should priortize movies that don't exclude famlies and children from their customer base. 
 
 ### Create a Unique Experience That Is Hard to Imitate
+A popular appealing aspect of Netflix and other streaming services is that they offer a large selection of movies and televison shows that can be easily watched from home with an affordable monthly price. The average price for a movie ticket in 2022 was $9.17, while a basic subscription plan for Netflix costs $9.99 monthly. In order to compete with streaming services that can offer a large selection of content for a low price, movie theaters need to reinforced their inherent strength of having a unique experience that is hard to replicate. 
+
+## Conclusion
+
 
 ## References 
 * Avatar 2022 re-release. Box Office Mojo. (n.d.). Retrieved January 22, 2023, from https://www.boxofficemojo.com/release/rl2319418113/ 
 
 * Raftery, B. (2022, March 31). *Here's what it will take for movie theaters to survive 10 years from now* EW.com. Retrieved January 22, 2023, from https://ew.com/movies/future-of-movie-theaters/ 
 
+*
