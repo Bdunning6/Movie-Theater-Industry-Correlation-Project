@@ -11,7 +11,7 @@
 6. [Data Cleaning](#data-cleaning)
 7. [Correlation](#correlation)
 8. [Visualizing with PowerBI](#visualizing-with-powerbi)
-9. [What Makes a Movie Succesful?](#what-makes-a-movie-succesful?)
+9. [What Makes a Movie Succesful?](#what-makes-a-movie-succesful)
 
 
 ## Introduction
