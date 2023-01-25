@@ -8,6 +8,11 @@
 3. [Dataset](#dataset)
 4. [Preparing the Data](#preparing-the-data)
 5. [Overview of Data](#overview-of-data)
+6. [Data Cleaning](#data-cleaning)
+7. [Correlation](#correlation)
+8. [Visualizing with PowerBI](#visualizing-with-powerbi)
+9. [What Makes a Movie Succesful?](#what-makes-a-movie-succesful?)
+
 
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
@@ -200,7 +205,7 @@ Now that the correlation and visualization parts of this project are complete, w
 The second strongest correlation was between a movies number of votes on IMDb and its gross profit with a correlation of .63. This is interesting because the correlation between a movies IMDb score was only a .19. The number of votes represents the total number of reviews for a movie on IMDb's page. The strong correlation between votes and gross tells us that a high quantity of reviews is much more important for a movie’s success compared to the average rating of a movie. Production companies should seek to have their movies reviewed by as many critics and regular viewers as possible to optimize their success in theaters.
 
 ### Genre and Rating
-Although genre and rating had low correlations with gross, through our visualization analysis we saw that certain genres and ratings had more success than others. Genre and ratings often coincide as an indicator for a movies success. The animation, family and action genres had the highest average gross profits while the G, PG and PG-13 ratings had the highest average gross profits for ratings. Movies that are both family friendly in the genre and rating department are more likely to generate a greater gross due to the fact that these movies don't exclude children from their customer base by being too violent. The top 5 highest grossing movies of all time are all either PG or PG-13, which demonstrates how a movies rating can potentialy lead to higher success.
+Genre had a moderate negative correlation with gross, which tells us that certain genres are more succesful than others. Through the visualization analysis we saw that certain genres and ratings had more success than others. Genre and ratings often coincide as an indicator for a movies success. The animation, family and action genres had the highest average gross profits while the G, PG and PG-13 ratings had the highest average gross profits for ratings. Movies that are both family friendly in the genre and rating department are more likely to generate a greater gross due to the fact that these movies don't exclude children from their customer base by being too violent. The top 5 highest grossing movies of all time are all either PG or PG-13, which demonstrates how a movies rating can potentialy lead to higher success.
 
 ## Developing a Potential Business Strategy for Movie Theaters
 
@@ -220,7 +225,7 @@ The highest grossing films fell under the G, PG and PG-13 ratings. The family, a
 A popular appealing aspect of Netflix and other streaming services is that they offer a large selection of movies and television shows that can be easily watched from home with an affordable monthly price. The average price for a movie ticket in 2022 was $9.17, while a basic subscription plan for Netflix costs $9.99 monthly. To compete with streaming services that can offer a large selection of content for a low price, movie theaters need to reinforce their inherent strength of having a unique experience that is hard to replicate. Theaters can offer vivid movie watching experiences with 3D movies, advanced sound systems and 4K screens which many customers cannot replicate at home, even in a home theater setting. By focusing marketing efforts on highlighting these features, theaters could differentiate themselves.
 
 ## Conclusion
-
+Through this project, I gained insights into the movie production and theater industry. I was able to succesfully clean the data and develop both correlational and visual analysis to help answer the question of what makes a movie sucessful. Budget and IMDb votes had the strongest positive correlation with gross while genre had a moderate negative correlation with gross. Through the visualzation analysis, we were able to see that some of the highest grossing movies were big budget action movies. The family, animation and action genres had the highest average gross profit while the G, PG and PG-13 ratings had the highest average gross profit aswell. By putting this analysis together, I was able to develop a potential strategy for movie theaters that involves strategicaly re-releasing movies, priortizing big budget family friendly action movies and creating/maintaining a unique experience. 
 
 ## References 
 * Avatar 2022 re-release. Box Office Mojo. (n.d.). Retrieved January 22, 2023, from https://www.boxofficemojo.com/release/rl2319418113/ 
