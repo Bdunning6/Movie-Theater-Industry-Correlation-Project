@@ -12,6 +12,8 @@
 7. [Correlation](#correlation)
 8. [Visualizing with PowerBI](#visualizing-with-powerbi)
 9. [What Makes a Movie Succesful?](#what-makes-a-movie-succesful)
+10. [Developing a Potential Business Strategy for Movie Theaters](#developing-a-potential-business-strategy-for-movie-theaters)
+11. [References](#references)
 
 
 ## Introduction
@@ -223,9 +225,6 @@ The highest grossing films fell under the G, PG and PG-13 ratings. The family, a
 
 ### Create a Unique Experience That Is Hard to Imitate
 A popular appealing aspect of Netflix and other streaming services is that they offer a large selection of movies and television shows that can be easily watched from home with an affordable monthly price. The average price for a movie ticket in 2022 was $9.17, while a basic subscription plan for Netflix costs $9.99 monthly. To compete with streaming services that can offer a large selection of content for a low price, movie theaters need to reinforce their inherent strength of having a unique experience that is hard to replicate. Theaters can offer vivid movie watching experiences with 3D movies, advanced sound systems and 4K screens which many customers cannot replicate at home, even in a home theater setting. By focusing marketing efforts on highlighting these features, theaters could differentiate themselves.
-
-## Conclusion
-Through this project, I gained insights into the movie production and theater industry. I was able to succesfully clean the data and develop both correlational and visual analysis to help answer the question of what makes a movie sucessful. Budget and IMDb votes had the strongest positive correlation with gross while genre had a moderate negative correlation with gross. Through the visualzation analysis, we were able to see that some of the highest grossing movies were big budget action movies. The family, animation and action genres had the highest average gross profit while the G, PG and PG-13 ratings had the highest average gross profit aswell. By putting this analysis together, I was able to develop a potential strategy for movie theaters that involves strategicaly re-releasing movies, priortizing big budget family friendly action movies and creating/maintaining a unique experience. 
 
 ## References 
 * Avatar 2022 re-release. Box Office Mojo. (n.d.). Retrieved January 22, 2023, from https://www.boxofficemojo.com/release/rl2319418113/ 
