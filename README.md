@@ -17,15 +17,15 @@
 
 
 ## Introduction
-Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the general public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the abillity of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genre's and ratings of movies perform better than others? Or are the ratings of critics the most important? And most imporantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie succesfull and develop a potential business statetgy that allows for theaters to adapt in order to remain profitable in the future. 
+Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the ability of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genres and ratings of movies perform better than others? Or are the ratings of critics the most important? And most importantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie successful and develop a potential business strategy that allows for theaters to adapt to remain profitable in the future.
 
 ## Objectives
 * Develop a general understanding of the data.
 * Clean the data set of duplicates and missing values.
-* Use correlational methods to determine if there's any variables influence a movies success.
+* Use correlational methods to determine if there's any variables that dinfluence a movies success.
 * Develop visualizations to find any additional key insights.
 * Determine what makes a movie successful.
-* Create a potential business strategy that would allow for movie theaters to adapt and remain successful.
+* Create a potential business strategy that would allow movie theaters to adapt and remain successful.
 
 ## Dataset
 The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 columns. The 15 columns are:
@@ -49,9 +49,9 @@ The data set was found on Kaggle and is a csv file. There are 7668 rows and 15 c
 
 ## Preparing the Data
 
-### Importing the libaries and data set.
+### Importing the libraries and dataset.
 
-Importing the pandas, seaborn, numpy and matplotlib libaries. 
+Importing the pandas, seaborn, numpy, and matplotlib libraries. 
 ![Import Libaries Image](https://user-images.githubusercontent.com/115194266/211173986-a20effb5-10a5-4a46-bd06-3a8c95e85f7c.JPG)
 
 Importing the data set.
@@ -69,7 +69,7 @@ Beginning the data cleaning process by detecting missing values and summing them
 
 ![image](https://user-images.githubusercontent.com/115194266/211684627-fbcaacf2-343d-4608-b3b5-0d78198ea77e.png)
 
-We can see there are 11 columns with missing values. Most of the columns have a relatively small number of missing values besides the budget column. After doing a bit of research to find out why there were missing values, the owner of the Kaggle data stated that some of information for the movies on IMDB were blank. We can use a few imputation methods to fill in these values. We need to first look at the data types before we move forward with any sort of imputation.
+We can see there are 11 columns with missing values. Most of the columns have a relatively small number of missing values besides the budget column. After doing a bit of research to find out why there were missing values, the owner of the Kaggle data stated that some of the information for the movies on IMDb was blank. We can use a few imputation methods to fill in these values. We need to first look at the data types before we move forward with any sort of imputation.
 
 ![image](https://user-images.githubusercontent.com/115194266/211686216-52ae2ac4-15c6-4655-b78f-ad343df6b2da.png)
 
@@ -87,10 +87,10 @@ For the object/string variables, we will impute text strings that state no infor
 * And lastly for the company column, the missing values can be replaced with "No production company provided".
 ![image](https://user-images.githubusercontent.com/115194266/211916657-9ac5149c-24a5-4de3-84dd-1b6c2876a20c.png)
 
-Now that the missing object columns are taken care of, we can move onto the gross, budget, votes and runtime columns. Since the number of missing values in these columns are numeric and are more significant for our analysis, we will use KNN imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. In a separate notebook we can use the Within Clusters Sum of Squares and the Elbow Method to determine and visualize what the optimal number of clusters should be.
+Now that the missing object columns are taken care of, we can move onto the gross, budget, votes, and runtime columns. Since the number of missing values in these columns is numeric and is more significant for our analysis, we will use KNN(K-Nearest Neighbors) imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. The K value is the number of clusters in a data set. In a separate notebook we can use the Within Clusters Sum of Squares and the Elbow Method to determine and visualize what the optimal number of clusters should be.
 
 ### Utilizing the Elbow Method
-Using a seperate notebook, the necessary libaries and data can be imported.
+Using a seperate notebook, the necessary libraries and data can be imported.
 
 ![image](https://user-images.githubusercontent.com/115194266/212750593-ee7bcece-6b77-4c19-94f9-ff5851c6af3e.png)
 
@@ -125,7 +125,7 @@ There is no more missing data in any of the columns.
 
 ![image](https://user-images.githubusercontent.com/115194266/211926177-1fe243b9-2acf-48b7-9dd7-b7d621312b5b.png)
 
-For some of the rows, the year column is incorrect. The release date provides a more accurate description on what year the movie released. An extraction of the year from the released column can fix this.
+For some of the rows, the year column is incorrect. The release date provides a more accurate description on what year the movie was  released. An extraction of the year from the released column can fix this.
 
 ![image](https://user-images.githubusercontent.com/115194266/212426983-4f4f8582-a728-4ef2-9340-5522951f08a3.png)
 
@@ -134,9 +134,9 @@ Finishing the data cleaning process by dropping duplicates rows.
 ![image](https://user-images.githubusercontent.com/115194266/212426701-68f4d554-f6de-4be0-ad71-21056e6c5e6a.png)
 
 ## Correlation
-Now that the data is cleaned, we can begin to analyze the factor on what makes movies successful and begin to develop a strategy for the movie theater industry to remain successful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget Vs Gross and IMDB Score Vs Gross to develop general an insight.
+Now that the data is cleaned, we can begin to analyze the factor that make movies successful and begin to develop a strategy for the movie theater industry to remain successful in the future. By using correlation methods, we can and visualize the strength of a linear relationship between two variables. This is useful because we can see if certain movie factors are more likely to lead to a higher gross profit and a higher popularity among movie watchers. We can start by visualizing the correlation of Budget vs Gross and IMDb Score vs Gross to develop general an insight.
 
-### Budget Vs Gross Earnings
+### Budget vs Gross Earnings
 
 ![image](https://user-images.githubusercontent.com/115194266/212206526-3c54c5f8-7049-4b3b-a769-eefcf1b3f8c9.png)
 
