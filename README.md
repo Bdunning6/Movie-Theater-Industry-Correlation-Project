@@ -180,21 +180,21 @@ Looking at the new heat map, we can still see that gross and budget have the str
 
 ### Top Earning Movies and Movie Genres Ranked by Total and Average Gross Profits
 
-![image](https://user-images.githubusercontent.com/115194266/213940053-1d62c28d-6ea3-4377-9f0b-55ffe6a8281f.png)
+![image](https://user-images.githubusercontent.com/115194266/227673955-a0e4fd9f-24ce-4c8a-9d8d-2c5586da8786.png)
 
-![image](https://user-images.githubusercontent.com/115194266/213940825-8119948c-d8f7-4fc7-8c51-9967d7132afe.png)
+![image](https://user-images.githubusercontent.com/115194266/227674132-eb2d5fe5-7df2-4421-9f5c-62b3ac43bd4e.png)
 
 The top total gross earning genres are action, comedy, and animation. The total gross for action is about $243 billion dollars. This makes sense since some of the top movies earning movies are from the action genre, including the first Avatar movie (approximately $2.85 billion), Avengers: Endgame (approximately $2.80 billion) and Star Wars: Episode VII (approximately $2.07 billion). The top average gross earning genres are animation, family, and action. A reason why animation and family movies generate the highest average gross could be because they have films that are viewable by children. This means that movies of this genre could potentially generate more profit by selling larger volumes of tickets to parents, their children and other family members. Horror movies and rated R movies potentially excludes a large customer base of children because of age restrictions. This could explain why horror films have a lower average gross profit compared to animation and family movies.
 
 ### Movie Ratings Ranked by Average Gross Profits
 
-![image](https://user-images.githubusercontent.com/115194266/213945518-b86433f2-d96a-4610-8cf0-943fb56dc3ea.png)
+![image](https://user-images.githubusercontent.com/115194266/227674552-55638165-a11f-4489-8a64-645ec01a5d03.png)
 
 The top 4 average earning ratings are G, PG-13, TV-PG and PG. This reinforces the idea that more family-friendly tends to generate more gross profit on average. Some of the top earning movies such as Avatar, Titanic, Star Wars: Episode VII and Avengers: Endgame are all rated PG-13. This indicates that part of a movies success is having a movie rating that is more accessible to a larger customer base such as children, which allows for a greater volume of ticket sales. 
 
 ### Highest Budgeted Movies Compared to their Gross Profits
 
-![image](https://user-images.githubusercontent.com/115194266/213948567-ed8674c6-7ebd-47d0-ae39-799b165f1593.png)
+![image](https://user-images.githubusercontent.com/115194266/227674615-fc2f5199-d8ee-4447-9690-0873e743a2df.png)
 
 During the correlation part of this project, we saw that budget and gross profit had the strongest correlation with a .75. Here we are comparing the top 10 highest budgeted movies with their respective gross profits. Every movie was able to generate more profit than their budget, some more than others. This chart supports the idea that a movies budget is one of the biggest factors in what makes a movie financially successful.
 
@@ -214,11 +214,11 @@ Genre had a moderate negative correlation with gross, which tells us that certai
 ### Re-Releasing Historically Successful Movies
 Many movie theaters already re-release movies and have had a large amount of success. According to Boxofficemojo, the re-release of James Cameron's first Avatar movie made over 76 million worldwide. Although this pales in comparison to the original box office release, it shows that the movie going customer base is still willing to watch previously released movies. Theaters could enhance this strategy by re-releasing certain movies on holidays. Movies that have performed well that are part of the horror genre could be released during the month of October. Additionally, popular movies that fall under the romance genre could be re-released during the month of February for Valentine’s Day. Furthermore, the unofficial holiday Star Wars holiday May 4th could been seen as an excellent time to re-release Star Wars movies.
 
-![image](https://user-images.githubusercontent.com/115194266/214173290-b2bca10c-82ca-4ea2-917b-a68cf0cc48c2.png)
+![image](https://user-images.githubusercontent.com/115194266/227674697-d46355f0-fb73-4562-b1c9-f5e3b4cec92d.png)
 
-![image](https://user-images.githubusercontent.com/115194266/214174633-58286d17-185b-4cfa-8ae0-c6794ab633dc.png)
+![image](https://user-images.githubusercontent.com/115194266/227674729-96eef1dc-5497-426f-b61b-17a20e42f28e.png)
 
-![image](https://user-images.githubusercontent.com/115194266/214432351-8c14c130-4ee0-4648-962e-0415d5df2d5f.png)
+![image](https://user-images.githubusercontent.com/115194266/227674799-34e6faf0-da34-453c-b147-99abaae599bd.png)
 
 ### Priortize Marketing and Screentime for Big Budget Family Friendly Movies
 The highest grossing films fell under the G, PG and PG-13 ratings. The family, animation and action genres were the top average grossing genres. Through the correlational analysis, we found that a films budget had the strongest correlation with a films gross profit. Using this information, movie theaters should prioritize their marketing efforts towards movies that have higher budgets and fall under a family friendly genre and rating. By working more directly with movie production companies, movie theaters should seek to generate as attention as possible to upcoming releases and potential historically popular re-releases. Theaters should prioritize movies that don't exclude families and children from their customer base.
