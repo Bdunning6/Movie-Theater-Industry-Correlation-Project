@@ -89,25 +89,7 @@ For the object/string variables, we will impute text strings that state no infor
 
 Now that the missing object columns are taken care of, we can move onto the gross, budget, votes, and runtime columns. Since the number of missing values in these columns is numeric and is more significant for our analysis, we will use KNN(K-Nearest Neighbors) imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. The K value is the number of clusters in a data set. In a separate notebook we can use the Within Clusters Sum of Squares and the Elbow Method to determine and visualize what the optimal number of clusters should be.
 
-### Utilizing the Elbow Method
-Using a seperate notebook, the necessary libraries and data can be imported.
-
-![image](https://user-images.githubusercontent.com/115194266/212750593-ee7bcece-6b77-4c19-94f9-ff5851c6af3e.png)
-
-A data frame can be created containing the columns that have missing values. The missing values will be dropped from this data frame to find the optimal K value.
-
-![image](https://user-images.githubusercontent.com/115194266/212750920-4fc9d30c-9509-413d-b03d-770d4000a8c2.png)
-
-To reduce the level of variance, a standard scaler can be imported and fitted to the data frame to standardize the data.
-
-![image](https://user-images.githubusercontent.com/115194266/212751373-cc420a39-8d67-469e-a223-6df71a979f80.png)
-
-Creating the Within Clusters Sum of Squares model. A for loop can be created with the range of 1-11 to test the number of clusters from 1-10. The results then will be plotted with the number of clusters on the X-axis and the WCSS (Within Cluster Sum of Squares) on the Y-axis.
-
-![image](https://user-images.githubusercontent.com/115194266/212753178-e3244bc5-841a-4bb4-af20-4320a859ecee.png)
-
-There are two bends in the graph at K=2 and K=3. The lowest bend in the plot appears to be at 3, indicating that 3 is the optimal number of clusters. 
-We will now return to the original workbook to use KNN imputation to impute the rest of the missing numeric values.
+### Imputing Missing Values
 
 ![image](https://user-images.githubusercontent.com/115194266/212780453-b967cddb-8eca-4afb-8e87-7b8796d40969.png)
 
