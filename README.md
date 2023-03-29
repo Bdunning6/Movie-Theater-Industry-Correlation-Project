@@ -91,8 +91,6 @@ Now that the missing object columns are taken care of, we can move onto the gros
 
 ### Imputing Missing Values
 
-![image](https://user-images.githubusercontent.com/115194266/212780453-b967cddb-8eca-4afb-8e87-7b8796d40969.png)
-
 Using the KNN imputer to impute the missing values for the score, budget, gross, votes and runtime columns. Using the 3 as the number for the number nearest neighbors/k-value.
 
 ![image](https://user-images.githubusercontent.com/115194266/212753911-0798f12b-2125-48cd-9964-b44cbc0bff31.png)
