@@ -87,7 +87,7 @@ For the object/string variables, we will impute text strings that state no infor
 * And lastly for the company column, the missing values can be replaced with "No production company provided".
 ![image](https://user-images.githubusercontent.com/115194266/211916657-9ac5149c-24a5-4de3-84dd-1b6c2876a20c.png)
 
-Now that the missing object columns are taken care of, we can move onto the gross, budget, votes, and runtime columns. Since the number of missing values in these columns is numeric and is more significant for our analysis, we will use KNN(K-Nearest Neighbors) imputation to fill in the missing values for these columns. We need to find the optimal K value before we use any sort of imputation. The K value is the number of clusters in a data set. In a separate notebook we can use the Within Clusters Sum of Squares and the Elbow Method to determine and visualize what the optimal number of clusters should be.
+Now that the missing object columns are taken care of, we can move onto the gross, budget, votes, and runtime columns. Since the number of missing values in these columns is numeric and is more significant for our analysis, we will use KNN(K-Nearest Neighbors) imputation to fill in the missing values for these columns. 
 
 ### Imputing Missing Values
 
