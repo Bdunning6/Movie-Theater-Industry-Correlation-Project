@@ -15,6 +15,7 @@
 10. [Developing a Potential Business Strategy for Movie Theaters](#developing-a-potential-business-strategy-for-movie-theaters)
 11. [References](#references)
 
+### My entire portfolio can be found [here](https://github.com/Bdunning6/Portfolio).
 
 ## Introduction
 Movie theaters have been a vital part of the motion picture industry for a long period of time, allowing producers to generate profit while introducing their movies to the public. But due to the introduction of streaming services such as Netflix and the ramifications of a worldwide pandemic, the ability of movie theaters to generate profit has been diminished. But what leads a movie to be profitable? Does a higher budget mean it's more likely a movie will profit? Do certain genres and ratings of movies perform better than others? Or are the ratings of critics the most important? And most importantly, can movie theaters adjust their strategy to adapt to a new environment? Through this project, I will analyze what makes a movie successful and develop a potential business strategy that allows for theaters to adapt to remain profitable in the future.
